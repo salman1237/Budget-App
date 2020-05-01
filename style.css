@@ -72,18 +72,21 @@ body {
 .budget__income {
     margin-bottom: 10px;
     background-color: #28B9B5;
+    border-radius: 5px;
 }
 
 .budget__expenses {
     background-color: #FF5049;
+    border-radius: 5px;
 }
 
 .budget__income--text,
 .budget__expenses--text {
     float: left;
-    font-size: 13px;
+    font-size: 20px;
     color: #444;
     margin-top: 2px;
+    font-weight: 600;
 }
 
 .budget__income--value,
@@ -208,7 +211,7 @@ h2 {
 .expenses__title { color: #FF5049; }
 
 .item {
-    padding: 13px;
+    padding: 10px;
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -217,11 +220,12 @@ h2 {
 
 .item__description {
     float: left;
+    width: fit-content;
 }
 
 .item__value {
     float: left;
-    transition: transform 0.3s;
+    /* transition: transform 0.3s; */
 }
 
 .item__percentage {
@@ -250,25 +254,34 @@ h2 {
 
 .item__delete {
     float: left;
+    padding-left: 15px;
+    padding-top: 3.5px;
+    
 }
 
 .item__delete--btn {
-    font-size: 20px;
+    font-size: 30px;
     background: none;
     border: none;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
-    display: none;
+    display:block;
+    
+}
+h6{
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
 }
 
-.item__delete--btn:focus { outline: none; }
+/* .item__delete--btn:focus { outline: none; }
 .item__delete--btn:active { transform: translateY(2px); }
 
 .item:hover .item__delete--btn { display: block; }
 .item:hover .item__value { transform: translateX(-20px); }
-.item:hover .item__percentage { transform: translateX(-20px); }
+.item:hover .item__percentage { transform: translateX(-20px); } */
 
 
 .unpaid {
